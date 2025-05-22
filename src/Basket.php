@@ -14,7 +14,7 @@ class Basket {
 
     public function add(string $code): void {
         if (!isset($this->catalogue[$code])) {
-            die("Product code $code not found in catalogue");
+            throw new \InvalidArgumentException("Product code $code not found in catalogue");
         }
         $this->items[] = $this->catalogue[$code];
     }
