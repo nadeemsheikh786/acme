@@ -1,6 +1,9 @@
 <?php
 use PHPUnit\Framework\TestCase;
-use Acme\{Product, Basket, DeliveryRules, BuyOneHalfPriceOffer};
+use Acme\Product;
+use Acme\Basket;
+use Acme\DeliveryRules;
+use Acme\BuyOneHalfPriceOffer;
 
 class BasketTest extends TestCase {
     private array $catalogue;
